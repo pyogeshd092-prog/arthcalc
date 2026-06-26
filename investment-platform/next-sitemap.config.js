@@ -16,7 +16,7 @@ module.exports = {
     ],
   },
   additionalPaths: async (config) => {
-    const { INVESTMENT_CATEGORIES, INVESTMENTS, getAllComparisons } = require('./lib/data/investments');
+    const { INVESTMENT_CATEGORIES, INVESTMENTS } = require('./lib/data/investments');
     const paths = [];
 
     // Category pages
@@ -33,9 +33,9 @@ module.exports = {
       paths.push({ loc: `/calculators/${inv.id}`, changefreq: 'weekly', priority: 0.9 });
     }
 
-    // Comparison pages
-    const comps = getAllComparisons();
-    for (const { slug } of comps) {
+    // Comparison pages (static list)
+    const comparisons = ['fd-vs-sip','fd-vs-ppf','ppf-vs-nps','epf-vs-nps','ssy-vs-ppf','fd-vs-rd','sip-vs-lumpsum','gold-etf-vs-sgb','elss-vs-ppf','nps-vs-epf'];
+    for (const slug of comparisons) {
       paths.push({ loc: `/compare/${slug}`, changefreq: 'monthly', priority: 0.8 });
     }
 
