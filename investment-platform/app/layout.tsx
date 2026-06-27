@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     description: 'Free calculators for FD, SIP, PPF, NPS, EPF, Gold & 40+ investments. Compare. Learn. Educational only.',
   },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    google: 'lzMJ2J30D0ugxwNlDmyXye3agmduXE8aPq24blbcL8A',
   },
 };
 
