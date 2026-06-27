@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://arthcalc.wealth',
+  siteUrl: process.env.SITE_URL || 'https://arthcalc.vercel.app',
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.7,
@@ -12,7 +12,7 @@ module.exports = {
       { userAgent: '*', disallow: ['/admin', '/api/', '/dashboard'] },
     ],
     additionalSitemaps: [
-      'https://arthcalc.wealth/sitemap.xml',
+      'https://arthcalc.vercel.app/sitemap.xml',
     ],
   },
   additionalPaths: async (config) => {

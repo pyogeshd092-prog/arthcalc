@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arthcalc.in'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://arthcalc.vercel.app'),
   title: {
     default: 'ArthCalc — India\'s Most Comprehensive Investment Calculator',
     template: '%s | ArthCalc',
